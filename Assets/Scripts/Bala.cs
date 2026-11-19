@@ -26,7 +26,7 @@ public class Bala : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Acertou o player!");
+            GameManager.Instance.GameOver(); 
             Destroy(gameObject);
         }
     }
